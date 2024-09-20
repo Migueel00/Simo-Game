@@ -19,26 +19,26 @@ export default function App() {
     const potions = [
         {
             color: 'blue',
-            on: './public/blue-potion-on.png',
-            off: './public/blue-potion.png',
+            on: './blue-potion-on.png',
+            off: './blue-potion.png',
             sound: 'one', // Si quieres asignar un sonido
         },
         {
             color: 'green',
-            on: './public/green-potion-on.png',
-            off: './public/green-potion.png',
+            on: './green-potion-on.png',
+            off: './green-potion.png',
             sound: 'two',
         },
         {
             color: 'purple',
-            on: './public/purple-potion-on.png',
-            off: './public/purple-potion.png',
+            on: './purple-potion-on.png',
+            off: './purple-potion.png',
             sound: 'three',
         },
         {
             color: 'red',
-            on: './public/red-potion-on.png',
-            off: './public/red-potion.png',
+            on: './red-potion-on.png',
+            off: './red-potion.png',
             sound: 'four',
         },
     ];
@@ -186,7 +186,7 @@ export default function App() {
                 </>
             ) : (
                 <div className="header">
-                    <img src="./public/boton.png" alt="boton" onClick={initGame} className="btn-enter" />
+                    <img src="./boton.png" alt="boton" onClick={initGame} className="btn-enter" />
                 </div>
             )}
         </>
