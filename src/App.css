@@ -7,20 +7,19 @@
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    width: 600px;
-    height: 600px;
-    background-color: black;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
-    border-radius: 320px;
+    margin-top: 180px;
 }
 
-.center-container{
-    position: absolute;
-    border-radius: 300px;
-    background-color: black;
-    width: 600px;
-    height: 600px;
+.container img{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover{
+    transform: scale(1.2);
 }
 
 .pad{
@@ -53,4 +52,25 @@
     border-bottom-right-radius: 300px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.btn-enter{
+    width: 190px;
+    margin-top: 550px;
+    background-color: #ffe6b5;
+    color: black;
+    cursor: pointer;
+    animation: shrink 1s ease-in-out infinite;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9); 
+    }
+    100% {
+        transform: scale(1);
+    }
 }
