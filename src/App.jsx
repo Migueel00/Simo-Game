@@ -146,7 +146,7 @@ export default function App() {
 
     useEffect(() => {
         if (!isGameOn) {
-            document.body.style.backgroundImage = "url('./src/assets/images/background.jpg')";
+            document.body.style.backgroundImage = "url('./background.jpg')";
             document.body.style.backgroundSize = 'cover';
             document.body.style.backgroundPosition = 'center';
         } else {
